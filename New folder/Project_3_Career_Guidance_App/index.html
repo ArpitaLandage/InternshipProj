@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Career Guidance App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Career Guidance Portal 🎓</h1>
+
+    <!-- Step 1: Login -->
+    <div class="box">
+      <h2>Student Login</h2>
+      <input type="email" placeholder="Email" id="email" />
+      <input type="password" placeholder="Password" id="password" />
+      <button onclick="handleLogin()">Login</button>
+      <p><a href="#">Create New Account</a></p>
+    </div>
+
+    <!-- Step 2: Career and Location Selection -->
+    <div class="box">
+      <h2>Choose Your Career Field</h2>
+      <select id="career">
+        <option>Engineering</option>
+        <option>Management</option>
+        <option>Design</option>
+        <option>Medical</option>
+      </select>
+
+      <h2>Preferred Location</h2>
+      <button onclick="selectLocation('India')">India</button>
+      <button onclick="selectLocation('Abroad')">Abroad</button>
+    </div>
+
+    <!-- Step 3: Colleges List -->
+    <div class="box">
+      <h2>Matching Colleges</h2>
+      <ul id="collegeList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
